@@ -1,0 +1,635 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 
+
+PATTERNS
+
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Rubik", sans-serif;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+}
+
+ul,
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.container {
+  max-width: 1216px !important;
+  margin: 0 auto !important;
+}
+
+/* 
+
+HERO IMAGE
+
+*/
+
+.imgHero img {
+  max-width: 100%;
+}
+
+/* 
+
+HERO CONTENT
+
+*/
+
+.hero {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  gap: 48px;
+
+  padding: 148px 20px;
+}
+
+@media screen and (max-width: 568px) {
+  .hero {
+    flex-direction: column;
+    gap: 28px;
+
+    padding: 64px 20px;
+  }
+}
+
+.hero h1 {
+  color: #144372;
+
+  font-size: 132px;
+  font-weight: 300;
+  line-height: 100%;
+
+  max-width: 540px;
+}
+
+.hero div {
+  max-width: 491px;
+}
+
+.hero div h3 {
+  color: #f58220;
+
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 110%;
+}
+
+.hero div p {
+  color: #2c2b2d;
+
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 140%;
+
+  margin-top: 20px;
+}
+
+/* 
+
+HERO CONTENT | IPAD
+
+*/
+
+@media screen and (max-width: 991px) {
+  .hero h1 {
+    font-size: 72px;
+  }
+
+  .hero div h3 {
+    font-size: 40px;
+  }
+
+  .hero div p {
+    font-size: 20px;
+  }
+}
+
+/* 
+
+HERO CONTENT | MOBILE
+
+*/
+
+@media screen and (max-width: 568px) {
+  .hero h1 {
+    font-size: 72px;
+  }
+
+  .hero div h3 {
+    font-size: 32px;
+  }
+
+  .hero div p {
+    font-size: 16px;
+  }
+}
+
+/* 
+
+TOPICS CONTENT
+
+*/
+
+.topics {
+  background: url("https://public-escola-mobile.s3.amazonaws.com/imagens/background-blues.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  width: 100%;
+  height: auto;
+
+  padding: 96px 20px;
+}
+
+@media screen and (max-width: 991px) {
+  .topics {
+    height: fit-content !important;
+
+    padding: 64px 20px;
+  }
+
+  .topicsItem {
+    align-items: center !important;
+    flex-direction: column;
+  }
+}
+
+.topicsItem {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  gap: 48px;
+}
+
+.topicsItem div span {
+  background-color: #f58220;
+  color: #2c2b2d;
+
+  border-radius: 360px;
+
+  padding: 8px 48px;
+
+  font-size: 24px;
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
+
+  text-transform: uppercase;
+}
+
+.topicsItem div ul {
+  margin-top: 40px;
+
+  color: #fff;
+
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 140%;
+}
+
+.topicsItem div img {
+  max-width: 100%;
+}
+
+/* 
+
+PORTFOLIO CONTENT
+
+*/
+
+.portfolio {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 48px;
+
+  padding: 148px 20px;
+}
+
+.portfolio div h2 {
+  color: #ef4066;
+
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 105%;
+}
+
+.portfolio div p {
+  color: #2c2b2d;
+
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 140%;
+
+  margin-top: 20px;
+}
+
+.portfolio img {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 991px) {
+  .portfolio {
+    align-items: center !important;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .portfolio {
+    padding: 96px 20px 0px 20px !important;
+  }
+
+  .portfolio div h2 {
+    font-size: 32px;
+
+    max-width: 300px;
+  }
+
+  .portfolio div p {
+    font-size: 16px;
+  }
+}
+
+/* 
+
+HOUSE IMAGE
+
+*/
+
+.house {
+  position: relative;
+  padding: 0 20px;
+  top: 141px;
+}
+
+.house img {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 568px) {
+  .house {
+    padding: 0px 20px 64px 20px !important;
+  }
+}
+
+/* 
+
+INSCRIÇÃO CONTENT
+
+*/
+
+.inscricao {
+  background-color: #144372;
+  border-radius: 30px;
+
+  padding: 220px 64px 96px 64px;
+}
+
+.inscricao-item1 {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  gap: 48px;
+}
+
+@media screen and (max-width: 991px) {
+  .inscricao-item1 {
+    align-items: center !important;
+    flex-direction: column;
+  }
+
+  .inscricao {
+    padding: 153px 20px 96px 20px;
+
+    top: -200px;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .inscricao {
+    padding: 153px 20px 96px 20px;
+
+    top: -150px;
+  }
+
+  .inscricao-item1 h2 {
+    font-size: 32px !important;
+  }
+
+  .inscricao-item1 p {
+    font-size: 16px !important;
+  }
+
+  .price {
+    font-size: 16px !important;
+  }
+}
+
+.inscricao-item1 .inscricao-item1__content {
+  max-width: 550px;
+}
+
+.inscricao-item1 h2 {
+  color: #27bdbe;
+
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 105%;
+}
+
+.inscricao-item1 p {
+  color: #fff;
+
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 140%;
+
+  margin-top: 20px;
+}
+
+.inscricao-item1 .prices {
+  display: flex;
+  flex-direction: column;
+}
+
+.price {
+  border-radius: 360px;
+
+  color: #fff;
+
+  padding: 16px 32px;
+
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+}
+
+.price-1 {
+  background-color: #f58220;
+}
+
+.price-2 {
+  background-color: #ef4066;
+
+  margin-top: 12px;
+}
+
+.inscricao-btn {
+  margin-top: 56px;
+}
+
+.inscricao-btn a {
+  background-color: #27bdbe;
+  border-radius: 360px;
+
+  color: #2c2b2d;
+
+  display: flex;
+  justify-content: center;
+
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Rubik", sans-serif;
+  line-height: 150%;
+
+  text-decoration: none;
+
+  padding: 18px 0;
+
+  width: 100%;
+}
+
+/* 
+
+SAIBA MAIS
+
+*/
+
+.more {
+  background-color: #0ead69;
+
+  text-align: center;
+
+  padding: 200px 20px 148px 20px;
+
+  position: relative !important;
+  top: 0 !important;
+
+  z-index: 0 !important;
+}
+
+@media screen and (max-width: 991px) {
+  .more h2 {
+    font-size: 32px !important;
+  }
+
+  .more p {
+    font-size: 16px !important;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .more {
+    top: 3000px !important;
+    z-index: -999 !important;
+
+    position: absolute !important;
+
+    width: 100%;
+
+    padding: 250px 20px 148px 20px;
+  }
+
+  .more a {
+    font-size: 16px !important;
+
+    padding: 16px 16px !important;
+  }
+}
+
+.more h2 {
+  color: #fff;
+
+  font-size: 56px;
+  font-weight: bold;
+  line-height: 115%;
+}
+
+.more p {
+  color: #fff;
+
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 140%;
+
+  padding: 0 0 40px 0;
+}
+
+.more-btn {
+  width: 100% !important;
+}
+
+.more a {
+  background: #f58220;
+  color: #2c2b2d;
+
+  border-radius: 360px;
+
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Rubik", sans-serif;
+  line-height: 150%;
+
+  text-decoration: none;
+
+  padding: 16px 64px;
+}
+
+/* 
+
+FAQ
+
+*/
+
+.faq {
+  padding: 96px 20px;
+}
+
+@media screen and (max-width: 568px) {
+  .faq {
+    padding: 400px 0px 96px 0px !important;
+  }
+
+  .faq h2 {
+    font-size: 32px !important;
+  }
+}
+
+@media screen and (max-width: 515px) {
+  .faq {
+    padding: 550px 0px 96px 0 !important;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .faq {
+    padding: 650px 0px 96px 0 !important;
+  }
+}
+
+.faq h2 {
+  color: #2c2b2d;
+  text-align: center;
+
+  font-size: 56px;
+  font-weight: bold;
+  line-height: 120%;
+
+  padding: 0px 0px 48px 0;
+}
+
+#accordion {
+  margin: 100px auto;
+  width: 600px;
+}
+
+.accordion li {
+  border-bottom: 1.2px solid #144372;
+
+  list-style: none;
+
+  padding: 12px 0;
+
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.accordion li label {
+  align-items: center;
+  display: flex;
+
+  cursor: pointer;
+
+  padding: 12px;
+
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  line-height: 120%;
+}
+
+.accordion li label::before {
+  content: "+";
+
+  margin-right: 12px;
+
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.accordion li input[type="radio"] {
+  display: none;
+}
+
+.accordion .content {
+  color: #4d4d4d;
+
+  font-size: 16px;
+  line-height: 140%;
+
+  max-height: 0;
+  overflow: hidden;
+
+  transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordion input[type="radio"]:checked + label + .content {
+  max-height: 2500px;
+
+  padding: 12px 12px 24px;
+}
+
+.accordion input[type="radio"]:checked + label::before {
+  content: "-";
+}
+
+/* 
+
+FOOTER
+
+*/
+
+footer {
+  background-color: #144372;
+
+  border-bottom: 4px solid #0ead69;
+
+  text-align: center;
+
+  padding: 28px 20px;
+}
+
+footer h6 {
+  color: #fff;
+
+  font-weight: 300;
+  font-size: 14px;
+}
